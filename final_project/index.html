@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Username Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="examfinalproject.js"></script>
+</head>
+
+<body>
+    <!-- <script src="meeting1.js"></script> -->
+    <header>
+        <nav class="navbar">
+            <p href="#home" class="logo">Gen<span>Pass</span></p>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#generator">Generator</a></li>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="subtitle">SIMPLE GENERATOR TOOL</p>
+
+                <h1>
+                    USERNAME PASSWORD
+                    <span>GENERATOR</span>
+                </h1>
+
+                <p class="description">
+                    Aplikasi ini digunakan untuk mengenerate
+                    username atau password dengan mudah.
+                </p>
+
+                <div class="generator-buttons" id="generator">
+                    <button type="button" class="btn btn-username" onclick="generate(1)">
+                        Generate Username
+                    </button>
+
+                    <button type="button" class="btn btn-password" onclick="generate(2)">
+                        Generate Password
+                    </button>
+                </div>
+
+                <div class="result-card">
+                    <h3>Hasil Generate</h3>
+
+                    <p id="result">
+                        Hasil akan muncul di sini
+                    </p>
+
+                    <button type="button" class="copy-btn" onclick="copyResult()">
+                        Copy Hasil
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-section" id="history">
+            <h2>History Generator</h2>
+            <p class="history-description">
+                Riwayat username dan password yang telah dibuat.
+            </p>
+
+            <div class="history-container">
+                <div class="history-card">
+                    <h3>History Username</h3>
+                    <ul id="usernameHistory">
+                        <li>Belum ada username</li>
+                    </ul>
+                </div>
+
+                <div class="history-card">
+                    <h3>History Password</h3>
+                    <ul id="passwordHistory">
+                        <li>Belum ada password</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>Dibuat oleh <strong>Abram Carrol</strong></p>
+        <p class="copyright">
+            &copy; 2026 Username Password Generator
+        </p>
+    </footer>
+    
+</body>
+
+</html>
